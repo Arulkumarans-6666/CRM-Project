@@ -1,0 +1,18 @@
+# This is the main build configuration for Netlify
+[build]
+  # Unga build command correct ah inga kudukanum
+  command = "npm run build"
+  
+  # Unga build output folder oda peru
+  publish = "dist"
+
+# This is the magic rule that fixes the "Page not found" error
+[[redirects]]
+  # Entha URL ku request vanthalum (e.g., /admin, /employees/123)
+  from = "/*"
+  
+  # Atha unga main index.html file ku anupu
+  to = "/index.html"
+  
+  # Status code 200 (OK) oda anupu
+  status = 200
