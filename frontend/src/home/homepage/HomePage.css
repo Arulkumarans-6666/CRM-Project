@@ -1,0 +1,11 @@
+.homepage {
+  text-align: center;
+  padding: 40px;
+}
+
+.homepage img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}

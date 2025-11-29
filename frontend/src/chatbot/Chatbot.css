@@ -1,0 +1,83 @@
+/* Styling for the floating launcher button */
+.chatbot-launcher-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
+}
+
+.chatbot-launcher-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Container for the chatbot window */
+.chatbot-container {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  z-index: 999;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  overflow: hidden; /* Important for border-radius to apply to the child */
+}
+
+/* Customizations for react-chatbot-kit */
+.react-chatbot-kit-chat-container {
+  width: 350px;
+  height: 500px;
+}
+
+.react-chatbot-kit-chat-header {
+  background-color: #343a40;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Voice Input Button Styling */
+.voice-button {
+  position: absolute;
+  bottom: 12px;
+  right: 55px; /* Position it next to the send button */
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 5px;
+  color: #555;
+}
+
+.voice-button:hover {
+  color: #000;
+}
+
+.voice-button.listening {
+  color: red;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

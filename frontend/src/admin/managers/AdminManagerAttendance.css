@@ -1,0 +1,25 @@
+.accordion-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+.summary-badge {
+    background-color: #198754; /* Bootstrap success color */
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    margin-right: 1rem;
+}
+
+.summary-box {
+    line-height: 1.8;
+}
+
+.leave-list {
+    max-height: 150px;
+    overflow-y: auto;
+}
