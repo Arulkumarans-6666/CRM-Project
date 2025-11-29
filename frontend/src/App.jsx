@@ -12,6 +12,7 @@ import LoginPage from './home/login/LoginPage';
 import HomePage from './home/homepage/HomePage';
 import About from './home/about/About';
 import Contact from './home/contact/Contact';
+import AdminPayroll from './admin/AdminPayroll';
 import Admin from './admin/Admin';
 import AdminDashboard from './admin/dashboard/AdminDashboard';
 import EmployeeList from './admin/employees/EmployeeList';
@@ -67,6 +68,8 @@ const App = () => {
                     <Route path="stacks/:id" element={<StackDetails />} />
                     <Route path="purchases" element={<PurchaseList />} />
                     <Route path="purchases/:id" element={<PurchaseDetails />} />
+                    <Route path="/admin/payroll" element={<AdminPayroll />} />
+
                 </Route>
 
                 <Route path="/manager" element={role === 'manager' ? <Manager handleLogout={handleLogout} /> : <Navigate to="/login" />}>

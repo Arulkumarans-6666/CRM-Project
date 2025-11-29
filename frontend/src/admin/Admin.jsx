@@ -38,6 +38,7 @@ const Admin = ({ handleLogout }) => {
                     <NavLink to="/admin" className="nav-link" end>Dashboard</NavLink>
                     <NavLink to="/admin/employees" className="nav-link">Employees</NavLink>
                     <NavLink to="/admin/managers" className="nav-link">Managers</NavLink>
+                    <NavLink to="/admin/payroll" className="nav-link">Payroll</NavLink>
                     <NavLink to="/admin/stacks" className="nav-link">Stacks</NavLink>
                     <NavLink to="/admin/purchases" className="nav-link">Purchases</NavLink>
                     <NavLink to="/admin/managers/attendance" className="nav-link">Mark Attendance</NavLink>

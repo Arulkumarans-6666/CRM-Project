@@ -37,6 +37,8 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.use(express.json());
+const payrollRoutes = require("./routes/payrollRoutes");
+app.use("/api/payroll", payrollRoutes);
 
 // Routes
 app.use("/api/auth", require("./routes/authRoutes"));
