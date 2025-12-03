@@ -10,6 +10,8 @@ const app = express();
 
 // FINAL CORS CONFIG
 const allowedOrigins = [
+  "https://dev.arumexa.cloud",       // your frontend domain
+  "https://devbck.arumexa.cloud",    // backend domain (optional)
   "https://cement-project-five.vercel.app",  // main live frontend
   "http://localhost:5173",                   // local frontend
   "http://127.0.0.1:5173"                    // local fallback
